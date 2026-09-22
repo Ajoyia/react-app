@@ -3,15 +3,17 @@ import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
+import Test from './Test.tsx'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState<number>(0) 
 
   return (
     <>
+      <Test />
       <section id="center">
         <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
+          <img src={heroImg} className="base" width="170" height="180" alt="" />
           <img src={reactLogo} className="framework" alt="React logo" />
           <img src={viteLogo} className="vite" alt="Vite logo" />
         </div>
